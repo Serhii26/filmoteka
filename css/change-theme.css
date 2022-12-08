@@ -1,0 +1,224 @@
+body.light-theme {
+  background-color: #ffffff;
+}
+
+body.dark-theme {
+  background-color: #000000;
+}
+body.dark-theme footer {
+  border-top: solid 1px rgb(68, 67, 67);
+  background-color: #000000;
+}
+body.dark-theme .movies-list h2 {
+  color: #ffffff;
+}
+body.dark-theme .movies-list__item {
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.28, 0.7, 0.75, 0.45);
+  transition: -webkit-box-shadow 0.5s cubic-bezier(0.28, 0.7, 0.75, 0.45);
+  transition: box-shadow 0.5s cubic-bezier(0.28, 0.7, 0.75, 0.45);
+  transition: box-shadow 0.5s cubic-bezier(0.28, 0.7, 0.75, 0.45), -webkit-box-shadow 0.5s cubic-bezier(0.28, 0.7, 0.75, 0.45);
+  border-radius: 5px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.33;
+}
+body.dark-theme .movies-list__item:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -2px -3px 32px -4px rgba(255, 107, 8, 0.71);
+          box-shadow: -2px -3px 32px -4px rgba(255, 107, 8, 0.71);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+body.dark-theme .pagination__container_pages .pag-arrow {
+  background-color: rgb(68, 67, 67);
+}
+body.dark-theme .pagination__container_pages .pag-arrow:hover {
+  background-color: #ff6b08;
+  color: #ffffff;
+  border-radius: 5px;
+}
+body.dark-theme .pagenumbers button,
+body.dark-theme .pagenumbers div {
+  color: #ffffff;
+}
+body.dark-theme .footer__page,
+body.dark-theme .up-btn__icon {
+  color: #ffffff;
+  fill: #ffffff;
+}
+body.dark-theme .footer__page:hover, body.dark-theme .footer__page:focus,
+body.dark-theme .up-btn__icon:hover,
+body.dark-theme .up-btn__icon:focus {
+  -webkit-transition: fill 250ms linear, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ff6b08;
+}
+body.dark-theme .modal-film-card {
+  background-color: #000000;
+  color: #ffffff;
+}
+body.dark-theme .modal-film-card a {
+  color: #ffffff;
+}
+body.dark-theme .modal-film-card .trailer-link__svg {
+  fill: #ffffff;
+}
+body.dark-theme .modal-film-card .modal__info-list-data-vc {
+  color: #000000;
+}
+body.dark-theme .team__wrapper {
+  background-color: #000000;
+  color: #ffffff;
+}
+body.dark-theme .team__wrapper .team__image {
+  -webkit-box-shadow: 0px -2px 32px 1px #ff6b08;
+          box-shadow: 0px -2px 32px 1px #ff6b08;
+}
+body.dark-theme .team__wrapper .logo__icon {
+  fill: #ffffff;
+}
+
+.theme-switch {
+  position: absolute;
+  right: 0;
+  top: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px 24px;
+}
+
+.theme-switch__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-switch__toggle {
+  display: none;
+}
+
+.theme__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sunny__icon {
+  margin-left: 2px;
+  height: 17px;
+  width: 17px;
+}
+@media screen and (min-width: 768px) {
+  .sunny__icon {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.theme-switch__toggle + label {
+  display: inline-block;
+  position: relative;
+  width: 42px;
+  height: 20px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ff6b08), color-stop(45%, #fc8b34), color-stop(55%, #545454), to(#545454)) 0 0;
+  background: linear-gradient(to right, #ff6b08 0, #fc8b34 45%, #545454 55%, #545454 100%) 0 0;
+  background-size: 134px 100%;
+  border-radius: 70px;
+  padding: 1px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2) inset;
+}
+@media screen and (min-width: 768px) {
+  .theme-switch__toggle + label {
+    width: 64px;
+    height: 32px;
+    background-size: 178px 100%;
+    padding: 2px;
+  }
+}
+.theme-switch__toggle + label:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  border-radius: 100%;
+  background: wheat;
+  text-align: center;
+  line-height: 16px;
+  font-family: "Cabin", sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  color: #ff6b08;
+  text-transform: uppercase;
+  -webkit-transition: left 500ms ease, color 500ms ease, -webkit-transform 150ms ease;
+  transition: left 500ms ease, color 500ms ease, -webkit-transform 150ms ease;
+  transition: left 500ms ease, color 500ms ease, transform 150ms ease;
+  transition: left 500ms ease, color 500ms ease, transform 150ms ease, -webkit-transform 150ms ease;
+}
+@media screen and (min-width: 768px) {
+  .theme-switch__toggle + label:before {
+    width: 26px;
+    height: 26px;
+    left: 2px;
+    right: 2px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+}
+.theme-switch__toggle + label:active .theme-switch__toggle + label:before {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.theme-switch__toggle:checked + label {
+  background-position-x: -92px;
+}
+@media screen and (min-width: 768px) {
+  .theme-switch__toggle:checked + label {
+    background-position-x: -114px;
+  }
+}
+.theme-switch__toggle:checked + label:before {
+  content: "";
+  color: #007177;
+  left: 25px;
+}
+@media screen and (min-width: 768px) {
+  .theme-switch__toggle:checked + label:before {
+    left: 36px;
+  }
+}
+
+.theme-switch__icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+@media screen and (min-width: 768px) {
+  .theme-switch__icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}/*# sourceMappingURL=change-theme.css.map */

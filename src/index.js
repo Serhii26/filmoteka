@@ -12,6 +12,7 @@ import {
   API_KEY,
 } from './js/fetch-and-render-trending';
 
+import { pagination } from './js/pagination';
 import { up } from './js/up';
 
 //    import { render, renderOnSearchMistake } from './js/cards';
